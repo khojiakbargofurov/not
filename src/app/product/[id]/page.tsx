@@ -19,12 +19,16 @@ async function Detailspage(params : ParamsInterface) {
   const product = await request(params.params.id);
   console.log(product);
   return (
-    <div className="grid grid-cols-2 items-center justify-center">
+    <div className="grid md:grid-cols-2 grid-cols-1 items-center mt-32">
       <div>
-        <h1 className="font-bold text-3xl mb-10">{product.title}</h1>
-        <p className="text-2xl">{product.description}</p>
+        <h1 className="font-bold text-3xl pb-8">{product.title}</h1>
+        <p className="text-2xl pb-8">{product.description}</p>
+        <h3 className="text-xl font-bold">Brand: {product.brand}</h3>
+        <h3 className="text-xl font-bold">Price: {product.price}$</h3>
       </div>
-      <Image src={product.thumbnail} alt={product.title} width={500} height={500}/>
+      <div className="lg:ml-56 md:">
+        <Image src={product.thumbnail} alt={product.title} width={500} height={500}/>
+      </div>
     </div>
   )
 }

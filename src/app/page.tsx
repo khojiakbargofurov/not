@@ -30,7 +30,7 @@ async function Home() {
       {data.products.map((item: Product) => {
         return (
           <Link key={item.id}  href={`/product/${item.id}`}>
-            <div className="card w-64 h-[450px] bg-base-100 shadow-xl mb-4">
+            <div className="card w-72 h-[450px] bg-base-100 shadow-xl mb-4">
               <figure>
                 <Image src={item.thumbnail} alt={item.title} width={500} height={500} />
               </figure>

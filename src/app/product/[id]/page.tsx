@@ -26,7 +26,7 @@ async function Detailspage(params : ParamsInterface) {
         <h3 className="text-xl font-bold">Brand: {product.brand}</h3>
         <h3 className="text-xl font-bold">Price: {product.price}$</h3>
       </div>
-      <div className="lg:ml-56 md:">
+      <div className="lg:ml-56">
         <Image src={product.thumbnail} alt={product.title} width={500} height={500}/>
       </div>
     </div>

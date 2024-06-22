@@ -7,10 +7,10 @@ function Navbar() {
     <div className='max-w-6xl mx-auto'>
       <div className="navbar bg-base-100">
         <div className="flex-1">
-          <Link href='/' className="btn btn-ghost text-xl">daisyUI</Link>
+          <Link href='/' className="btn btn-ghost text-xl">Dummy Store</Link>
         </div>
         <div className="flex-none">
-          <ul className="menu menu-horizontal text-xl px-1">
+          <ul className="menu menu-horizontal text-xl font-bold px-1">
               <li><Link href='/about'>About</Link></li>
               <li><Link href='/price'>Price</Link></li>
               <li><Link href='/contact'>Contact</Link></li>

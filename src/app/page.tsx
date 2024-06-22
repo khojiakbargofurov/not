@@ -29,8 +29,8 @@ async function Home() {
     <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 mb-4">
       {data.products.map((item: Product) => {
         return (
-          <Link href={`/product/${item.id}`}>
-            <div key={item.id} className="card w-64 h-[450px] bg-base-100 shadow-xl mb-4">
+          <Link key={item.id}  href={`/product/${item.id}`}>
+            <div className="card w-64 h-[450px] bg-base-100 shadow-xl mb-4">
               <figure>
                 <Image src={item.thumbnail} alt={item.title} width={500} height={500} />
               </figure>
